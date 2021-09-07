@@ -1,0 +1,50 @@
+@import 'variables';
+
+/* My work */
+.my-work {
+  background-color: $clr-dark;
+  color: $clr-light;
+  text-align: center;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-around;
+
+  &__item {
+    margin-top: 2em;
+    overflow: hidden;
+    &-title {
+      margin: 1em;
+    }
+    &-img {
+      object-fit: cover;
+      object-position: top;
+      width: 350px;
+      height: 300px;
+      margin-bottom: 0.5em;
+    }
+
+    &-repo,
+    &-live {
+      border-style: none;
+      margin: 0.1em;
+      padding: 1em 0;
+      background-color: $clr-accent;
+      margin-bottom: 4em;
+      border-radius: 4px;
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 1em 2em;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

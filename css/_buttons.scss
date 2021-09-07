@@ -1,0 +1,19 @@
+@import 'variables';
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  background: $clr-accent;
+  color: $clr-dark;
+  cursor: pointer;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: $fw-bold;
+  transition: transform 200ms ease-in-out;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}

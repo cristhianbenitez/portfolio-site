@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'header';
+@import 'intro';
+@import 'buttons';
+@import 'media-query';
+@import 'services';
+@import 'about-me';
+@import 'my-work';
+@import 'footer';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* custom properties */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: $clr-light;
+  color: $clr-dark;
+  margin: 0;
+  font-family: $ff-primary;
+  font-size: $fs-body;
+  line-height: 1.6;
+}
+section {
+  padding: 5em 2em;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: $fw-bold;
+}
+
+:focus {
+  outline: 3px solid $clr-accent;
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+h1 {
+  font-size: $fs-h1;
+}
+h2 {
+  font-size: $fs-h2;
+}
+h3 {
+  font-size: $fs-h3;
+}
+
+.section-title {
+  margin-bottom: 0.25em;
+}
+.section__title {
+  &--intro {
+    font-weight: var(--ff-reg);
+
+    & strong {
+      display: block;
+    }
+  }
+}
+.section-subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+.section__subtitle {
+  &--intro,
+  &--about {
+    background: var(--clr-accent);
+    padding: 0.25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+  }
+  &--work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+  }
+}
